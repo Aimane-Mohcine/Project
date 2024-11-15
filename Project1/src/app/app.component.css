@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin-top: -20px;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li {
+  position: relative;
+  margin: 0 10px;
+}
+
+li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Montserrat Bold", "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #333333;
+}
+
+#image {
+  width: 221px;
+  height: 75px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  border-radius: 5px  5px 5px 5px;
+  top: 100%;
+  left: 0;
+  background-color: #000000; /* Black background */
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+  width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu li {
+  width: 100%;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.dropdown-menu li a {
+  padding: 8px 12px;
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  font-size: 10px;
+}
+
+.dropdown-menu li a:hover {
+  color: #0070c0;
+}
+
+/* Highlight the registration button */
+#registration {
+  background-color: #0070c0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 14px 16px;
+
+}
+#registration:hover  {
+
+  background-color: #b3b3b3;
+}
+
+li a:hover {
+  color: #0070c0;
+  transition: color 0.3s;
+}
+
+/* Responsive Design for various screen sizes */
+@media (max-width: 1200px) {
+  .navbar ul {
+    justify-content: space-between;
+  }
+
+  .dropdown-menu {
+    width: 180px; /* Incrase width for larger screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  #image {
+    width: 150px;
+    height: auto;
+  }
+
+  .dropdown-menu li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  #image {
+    width: 120px;
+    height: auto;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-menu li a {
+    font-size: 14px; /* Increase font size for readability */
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #image {
+    width: 100px;
+    height: auto;
+  }
+
+  .navbar a {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .dropdown-menu li a {
+    font-size: 14px;
+  }
+
+  /* Make dropdowns full width */
+  .dropdown-menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #image {
+    width: 80px;
+    height: auto;
+  }
+}
+/* ----------------------------------------------------------*/
+
+/* Footer Styles */
+/* Footer Styling */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.contact-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-options li {
+  margin-bottom: 10px; /* Add space between items */
+}
+
+.contact-options a {
+  color: #ffffff; /* Ensure text color is white */
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  gap: 5px; /* Space between icon and text */
+  transition: color 0.3s;
+}
+
+.contact-options a:hover {
+  color: #0070c0; /* Change color on hover */
+}
+
+
+.footer-links h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+  display: flex;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #0070c0;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/* Social Icons */
+.social-icons a {
+  margin: 5px;
+  transition: transform 0.3s;
+}
+
+.social-icons img {
+  width: 30px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.policy-links-1  {
+  font-size: 12px; /* Smaller font size */
+  padding-left: 1px; /* Adjust padding for indentation */
+  list-style-type: none; /* Remove numbering */
+}
+
+.policy-links-1 li {
+  margin-bottom: 20px; /* Reduce spacing between list items */
+}
+
+.policy-links-1 a {
+  color: #ffffff; /* Ensure text color is white */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.policy-links-1 a:hover {
+  color: #0070c0; /* Change color on hover */
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo img {
+    width: 120px;
+  }
+  .contact-options a, .footer-links a, .policy-links-1 p {
+    font-size: 12px;
+  }
+  .footer-text {
+    font-size: 10px;
+  }
+}

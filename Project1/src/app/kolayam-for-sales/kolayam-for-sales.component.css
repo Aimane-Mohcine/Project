@@ -1,0 +1,435 @@
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Utilise Flexbox pour centrer */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+
+  background-color: #f8f9fa; /* Couleur d'arrière-plan */
+}
+
+/* Main Container */
+.container {
+  height: auto;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: -2%;
+  margin-top: -3%;
+
+}
+
+/* Content */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px; /* Espace entre texte et image */
+  flex-wrap: wrap; /* Permet aux éléments de passer en ligne ou colonne selon la taille */
+}
+
+/* Text */
+.text {
+  max-width: 600px;
+}
+
+.text h1 {
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: "Montserrat Bold", "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #020202;
+  text-align: left;
+  font-size: 32px; /* Taille du texte par défaut */
+  line-height: 50px;
+}
+
+.text p {
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: "Montserrat Medium", "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;
+  font-size: 18px; /* Taille par défaut du paragraphe */
+  line-height: 30px;
+}
+
+/* Button */
+.cta-button {
+  width: 259px;
+  height: 64px;
+  padding: 10px;
+  background-color: #0070c0;
+  font-family: "Montserrat Bold", "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: normal;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  margin-left: -60%;
+}
+
+.cta-button:hover {
+  background-color: #b3b3b3;
+}
+
+/* Image */
+.image img {
+  width: 543px;
+  height: 314px;
+
+  height: auto;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+/* Responsiveness */
+
+/* Petits écrans (max-width: 992px) */
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column; /* Texte et image en colonne */
+    text-align: center;
+  }
+
+  .text h1 {
+    font-size: 28px; /* Réduit la taille du texte */
+  }
+
+  .text p {
+    font-size: 16px; /* Réduit la taille du paragraphe */
+    line-height: 28px;
+  }
+
+  .cta-button {
+    margin-left: 0;
+    width: 100%; /* Le bouton prend toute la largeur */
+    max-width: 300px;
+  }
+
+  .image img {
+    max-width: 300px; /* Réduit la taille de l'image */
+  }
+}
+
+/* Très petits écrans (max-width: 768px) */
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    height: 56px;
+  }
+
+  .image img {
+    max-width: 250px;
+  }
+}
+
+/* Écrans mobiles (max-width: 576px) */
+@media (max-width: 576px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .text h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    height: 50px;
+  }
+
+  .image img {
+    max-width: 200px;
+  }
+}
+/* -------------------------------------------------------------------------------------------------------*/
+/* Container Styles */
+.business-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  font-family: "Montserrat SemiBold", "Montserrat", sans-serif;
+}
+
+.business-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+  width: 590px;
+  height: 49px;
+  text-align: left;
+  font-family: "Montserrat Bold", "Montserrat", sans-serif;
+}
+
+/* Cards Container */
+.business-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards in a row */
+  gap: 20px; /* Space between cards */
+
+}
+
+/* Individual Card */
+.card {
+  background-color: #0070c0;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 327px;
+}
+
+.card h3 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+strong {
+  font-size: 16px; /* Taille du texte similaire à h4 */
+  font-weight: bold; /* Gras comme h4 */
+  margin-bottom: 10px; /* Espacement en bas */
+  display: block; /* Fait que le texte se comporte comme un bloc, comme un h4 */
+  color: inherit; /* Hérite de la couleur parent */
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .business-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards in a row */
+  }
+}
+
+@media (max-width: 576px) {
+  .business-cards {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+}
+/* -------------------------------------------------------------------------------------------------------*/
+/* Section Styles */
+.products-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+
+  width: 467px;
+  height: 148px;
+
+  font-family: "Montserrat Bold", "Montserrat", sans-serif;
+  text-align: left;
+}
+
+/* Grid Container */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cartes par ligne */
+  gap: 20px; /* Espacement entre les cartes */
+}
+
+/* Individual Product Card */
+.product-card {
+  background-color:  rgba(0, 0, 0, 0.35);/* Fond gris clair */
+  color: #000;
+  padding: 20px;
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre discrète */
+  text-align: left;
+  height: 370px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+
+}
+
+.product-highlight {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne */
+  }
+
+  .section-title {
+    font-size: 24px; /* Taille du titre ajustée */
+  }
+}
+
+@media (max-width: 576px) {
+  .products-grid {
+    grid-template-columns: 1fr; /* 1 carte par ligne */
+  }
+
+  .section-title {
+    font-size: 20px; /* Taille du titre ajustée pour petits écrans */
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------*/
+
+/* Section Styles */
+.testimonials-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.testimonials-title {
+  width: 216px;
+  height: 51px;
+  padding: 2px 2px 2px 2px;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.testimonials-subtitle {
+  width: 337px;
+  height: 51px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  padding: 2px 2px 2px 2px;
+  text-align: left;
+  margin-top: -2%;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000000;
+}
+
+/* Grid Container */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  gap: 20px;
+}
+
+/* Individual Testimonial Card */
+.testimonial-card {
+  background-color: #d7d7d7; /* Light gray background */
+  font-family: "Montserrat Medium", "Montserrat", sans-serif;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  height: 290px;
+
+
+}
+
+.testimonial-text {
+  font-size: 16px;
+
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Montserrat Medium", "Montserrat", sans-serif;
+  font-weight: 500;
+
+
+}
+
+.testimonial-author {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.testimonial-company {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  font-family: "Montserrat Medium", "Montserrat",sans-serif;
+
+
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .testimonials-title {
+    font-size: 24px;
+  }
+
+  .testimonials-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+
+  .testimonials-title {
+    font-size: 20px;
+  }
+
+  .testimonials-subtitle {
+    font-size: 14px;
+  }
+}
+

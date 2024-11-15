@@ -1,0 +1,280 @@
+.PRICING{
+  font-family: "Montserrat", sans-serif;
+}
+.PRICING-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2px;
+}
+.titre , .titre-secondary{
+  font-weight: 800;
+  font-family: "Montserrat Bold" , sans-serif;
+}
+
+.titre h1 , .titre-secondary h2 {
+  padding-bottom: 5px;
+}
+
+.PRICING-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.PRICING-links h3 {
+  font-family: "Montserrat Bold" , sans-serif;
+  margin-bottom: 10px;
+}
+
+.PRICING-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.PRICING-links ul li {
+  margin: 5px 0;
+}
+
+.PRICING-links p {
+  transition: color 0.3s;
+  font-family: "Montserrat SemiBold" , sans-serif;
+  font-weight: 600;
+
+}
+.container {
+  width: 80%;            /* Set width of the container (you can adjust the percentage or use fixed values like px) */
+  max-width: 1200px;     /* Maximum width of the container */
+  margin: 0 auto;        /* Centers the container horizontally */
+  padding: 20px;         /* Padding around the content inside the container */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+  border-radius: 10px;   /* Optional rounded corners */
+}
+
+.sec{
+  font-size: 14px;
+
+}
+
+.h3{
+  font-family: "Montserrat Bold" , sans-serif;
+  margin-bottom: 10px;
+}
+.sp{
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.subscribe {
+  background-color: #0070c0;
+  color: #ffffff;
+  font-family: "Montserrat Bold" , sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 5% 25%;
+}
+.container-fluid {
+  width: 100%;            /* Full width of the viewport */
+  padding: 0 15px;        /* Optional padding */
+  margin: 0;              /* Removes any default margin */
+  box-sizing: border-box; /* Includes padding and border in width */
+}
+
+li a:hover {
+  background-color: gray;
+  transition: color 0.3s;
+}
+
+.p-red{
+  color:  #ff0000;
+  font-size: 14px;
+  text-align: left;
+  line-height: normal;
+  font-family: "Montserrat SemiBold", "Montserrat", sans-serif;
+  padding: 10px 0;
+}
+.TESTIMONIALS{
+  background-color:  #d7d7d7;
+  border: #FFFFFF;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  height: 250px;
+}
+
+.TESTIMONIALS p {
+  font-family: "Montserrat Medium", "Montserrat", sans-serif
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit; /* Ensures it inherits the text color */
+  font: inherit;  /* Inherits font styles */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "Montserrat Bold" , sans-serif;
+}
+
+button img.im, button img.imb {
+  margin-left: 5px; /* Adjusts spacing between text and icons */
+}
+/* Small devices (mobile) */
+@media screen and (max-width: 767px) {
+  .PRICING-container {
+    display: block;
+  }
+
+
+  .TESTIMONIALS{
+    padding: 1em;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .PRICING-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .titre h1 {
+    font-size: 1.5em;
+    margin: 0px;
+  }
+  .titre-secondary h2 {
+    font-size: 1em;
+    margin: 0px;
+  }
+  .PRICING-section h3 {
+    font-size: 1.2em;
+  }
+  .tab {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .subscribe {
+    font-size: 0.6em;
+    display: block;
+  }
+  .sp {
+    font-size: 0.3em;
+  }
+  .PRICING-links ul li p {
+    font-size: 0.9em;
+  }
+  .cc{
+    margin-bottom: 1em;
+  }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .PRICING-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .PRICING-section {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .TESTIMONIALS{
+    padding: 1.7em;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  . .titre h1 {
+    font-size: 1.7em;
+    margin: 0px;
+  }
+  .titre-secondary h2 {
+    font-size: 1.2em;
+    margin: 0px;
+  }
+  .tab {
+    flex-direction: row;
+  }
+  .subscribe {
+    font-size: 0.8em;
+    display: block;
+  }
+  .sp {
+    font-size: 0.4em;
+  }
+  .cc{
+    margin-bottom: 1.5em;
+  }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 1024px) {
+  .PRICING-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .PRICING-section {
+    width: 22%; /* Adjusted width for larger screens */
+    margin-bottom: 20px;
+  }
+  .titre h1 {
+    font-size: 2em;
+    margin: 0px;
+  }
+
+  .TESTIMONIALS{
+    padding: 1.7em;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .titre-secondary h2 {
+    font-size: 1.5em;
+    margin: 0px;
+  }
+  .tab {
+    flex-direction: row;
+  }
+  .cc{
+    margin-bottom: 2em;
+  }
+  .subscribe {
+    font-size: 1em;
+    display: block;
+  }
+  .sp {
+    font-size: 0.4em;
+  }
+}
+
+/* Extra large devices (large desktops and TVs) */
+@media screen and (min-width: 1200px) {
+  .PRICING-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .TESTIMONIALS{
+    padding: 1.7em;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .PRICING-section {
+    width: 20%; /* Reduced width for larger screens */
+  }
+  .titre h1 {
+    font-size: 2em;
+    margin: 0px;
+  }
+  .titre-secondary h2 {
+    font-size: 1.5em;
+    margin: 0px;
+  }
+  .cc{
+    margin-bottom: 2em;
+  }
+}

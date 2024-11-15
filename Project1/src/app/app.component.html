@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">s
+  <title>Vertical Dropdown Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--     #################   navbar     #################   -->
+<div class="navbar">
+  <ul>
+    <!--     #################   LOGO     #################   -->
+    <li><a href="#home"><img id="image" src="assets/images/u170.jpg" alt="Logo"></a></li>
+
+    <!--     #################   MARKETPLACE dropdown    #################   -->
+    <li class="dropdown">
+
+      <a href="#marketplace" id="marketplace">MARKETPLACE</a>
+
+      <ol class="dropdown-menu">
+
+        <li><a href="#BUYING">BUYING</a></li>
+
+        <li><a href="#SELLING">SELLING</a></li>
+
+      </ol>
+
+    </li>
+
+    <li><a href="#contact" id="logistics">LOGISTICS</a></li>
+
+    <!--     #################   BY JOB ROLES dropdown     #################   -->
+    <li class="dropdown">
+      <a routerLink="/BY_JOB_ROLES"id="by-job-roles">BY JOB ROLES</a>
+
+      <ol class="dropdown-menu">
+
+        <li><a routerLink="/how_stat">HOW TO GET STARTED</a></li>
+
+        <li><a routerLink="/KOLAYAM_FOR_SALES">SALES ENGINEER</a></li>
+
+        <li><a routerLink="/SUPPLIER_QUALITY_ENGINEER">SUPPLIER QUALITY ENGINEER</a></li>
+
+        <li><a routerLink="/BUYER">BUYER</a></li>
+
+        <li><a routerLink="/LOGISTICS">FORWARDER LOGISTICS</a></li>
+
+      </ol>
+
+    </li>
+
+    <!--     #################   COMPANY dropdown     #################   -->
+    <li class="dropdown">
+
+      <a href="#company" id="company">COMPANY</a>
+
+      <ol class="dropdown-menu">
+
+        <li><a href="#category1">SUSTAINABILITY</a></li>
+
+        <li><a href="#ABOUT-US">ABOUT US</a></li>
+
+      </ol>
+    </li>
+
+    <li><a routerLink="/PRICING" id="pricing">PRICING</a></li>
+
+    <li><a href="#login" id="login">LOGIN</a></li>
+
+    <li><a href="#registration" id="registration">REGISTRATION</a></li>
+
+  </ul>
+</div>
+
+
+<router-outlet></router-outlet>
+
+<!--     #################   footer     #################   -->
+<footer>
+
+  <!--     #################   Trusted by several partners     #################   -->
+  <h1 class="text-center"> Trusted by several partners </h1>
+  <img src="assets/images/a.jpeg">
+
+  <!--     #################   footer-container     #################   -->
+  <div class="footer-container">
+
+
+    <!--     #################   Logo and Contact Options     #################   -->
+    <div class="footer-section footer-logo">
+
+      <!--     #################   Logo     #################   -->
+      <a href="#home"><img id="footer-logo" src="assets/images/u170.jpg" alt="Kolayam Logo" style="width: 150px;"></a>
+
+      <!--     #################   Contact Options     #################   -->
+      <ul class="contact-options">
+
+        <li><a href="#contactUs"><img src="assets/images/u56_a.svg" alt="Contact Icon" style="width: 20px;"> Contact Us</a></li>
+
+        <li><a href="#chatUs"><img src="assets/images/u63_a.svg" alt="Chat Icon" style="width: 20px;"> Chat Us</a></li>
+
+      </ul>
+
+    </div>
+
+    <!--    #################   Marketplace Links    #################   -->
+    <div class="footer-section footer-links">
+
+      <h3>Marketplace</h3>
+
+      <ul>
+
+        <li><a href="#Buying">Buying</a></li>
+
+        <li><a href="#Selling">Selling</a></li>
+
+      </ul>
+
+    </div>
+
+    <!--    #################   Logistics Links    #################   -->
+    <div class="footer-section footer-links">
+
+      <h3>Logistics</h3>
+
+      <ul>
+        <li><a href="#Shipping">Shipping</a></li>
+      </ul>
+
+    </div>
+
+    <!--    #################   policy-links    #################   -->
+    <div class="footer-section footer-links">
+
+      <h3>Sustainability</h3>
+
+      <ol class="policy-links-1">
+
+        <li><p >About Kolayam</p></li>
+
+        <li><p >Cookie Statement</p></li>
+
+        <li><p >Privacy Policy</p></li>
+
+        <li><p >Anti-Slavery Policy</p></li>
+
+        <li><p >Cookie Terms of Use Policy</p></li>
+
+        <li><p >General Conditions of Service</p></li>
+
+        <li><p >EULA End User License Agreement</p></li>
+
+      </ol>
+
+    </div>
+
+    <!--    #################   Company Links and Social Media    #################   -->
+    <div class="footer-section footer-links">
+
+      <!--    #################   Company Links #################   -->
+      <h3>Company</h3>
+
+      <!--    #################   Social Media    #################   -->
+      <div class="social-icons">
+
+        <a href="#linkedin" target="_blank"><img src="assets/images/u90.png" alt="LinkedIn" style="width: 30px;"></a>
+
+        <a href="#instagram" target="_blank"><img src="assets/images/u87.png" alt="Instagram" style="width: 30px;"></a>
+
+        <a href="#x" target="_blank"><img src="assets/images/u93.png" alt="X" style="width: 30px;"></a>
+
+        <a href="#youtube" target="_blank"><img src="assets/images/u96.png" alt="YouTube" style="width: 30px;"></a>
+
+      </div>
+
+      <!--    #################   Cost and Fee    #################   -->
+      <ul>
+        <li><a href="#CostAndFee">Cost and Fee</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <!--   #################   rights reserved   #################   -->
+  <p class="footer-text">&copy; 2024 Your Company. All rights reserved.</p>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
