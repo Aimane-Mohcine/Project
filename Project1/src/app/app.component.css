@@ -318,6 +318,10 @@ li a:hover {
   text-align: center;
 }
 
+.img{
+  padding: 20px 1px 20px 20px;
+  width: 100%;
+}
 
 @media (max-width: 768px) {
   .footer-container {
@@ -327,6 +331,9 @@ li a:hover {
   .footer-section {
     text-align: center;
     margin: 10px 0;
+  }
+  .img{
+    width: 100%;
   }
 }
 
@@ -339,5 +346,8 @@ li a:hover {
   }
   .footer-text {
     font-size: 10px;
+  }
+  .img{
+    width: 100%;
   }
 }

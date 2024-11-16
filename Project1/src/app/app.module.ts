@@ -10,6 +10,7 @@ import { SUPPLIERQUALITYENGINEERComponent } from './supplier-quality-engineer/su
 import { BUYERComponent } from './buyer/buyer.component';
 import { LOGISTICSComponent } from './logistics/logistics.component';
 import { PRICINGComponent } from './pricing/pricing.component';
+import { HowToGetStartedComponent } from './how-to-get-started/how-to-get-started.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PRICINGComponent } from './pricing/pricing.component';
     SUPPLIERQUALITYENGINEERComponent,
     BUYERComponent,
     LOGISTICSComponent,
-    PRICINGComponent
+    PRICINGComponent,
+    HowToGetStartedComponent
   ],
   imports: [
     BrowserModule,
